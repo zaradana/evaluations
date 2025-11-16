@@ -9,16 +9,23 @@ This project uses [Inspect AI](https://github.com/inspect-dev/inspect) to evalua
 
 ## Setup
 
-### Create and activate virtual environment
+### Install dependencies and set up environment
+
+Simply run:
 
 ```bash
-uv venv
+uv sync
 ```
 
-### Install dependencies
+This will:
+- Create a virtual environment (if it doesn't exist)
+- Install all dependencies from `pyproject.toml`
+- Create/update `uv.lock` for reproducible builds
+
+The virtual environment will be automatically activated in your shell. If you need to activate it manually:
 
 ```bash
-uv pip install -e .
+source .venv/bin/activate
 ```
 
 ### Configure environment variables
@@ -54,6 +61,7 @@ inspect/
 ├── data/                    # Dataset files
 ├── logs/                    # Evaluation logs
 ├── pyproject.toml           # Project configuration and dependencies
+├── uv.lock                  # Lock file for reproducible builds (auto-generated)
 └── README.md                # This file
 ```
 
