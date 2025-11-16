@@ -52,17 +52,23 @@ Or run it directly with Python:
 python tasks/hello_world.py --model openai/gpt-4o
 ```
 
-## Project Structure
+## Development
 
+### Linting and Formatting
+
+This project uses [ruff](https://github.com/astral-sh/ruff) for linting and formatting. Pre-commit hooks are configured to run automatically on commit.
+
+To manually run linting:
+
+```bash
+ruff check .
+ruff format .
 ```
-inspect/
-├── tasks/
-│   └── theory_of_mind.py    # Theory of mind evaluation task
-├── data/                    # Dataset files
-├── logs/                    # Evaluation logs
-├── pyproject.toml           # Project configuration and dependencies
-├── uv.lock                  # Lock file for reproducible builds (auto-generated)
-└── README.md                # This file
+
+Or run pre-commit on all files:
+
+```bash
+pre-commit run --all-files
 ```
 
 
