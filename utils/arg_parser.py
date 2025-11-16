@@ -1,4 +1,12 @@
 import argparse
+import os
+
+import dotenv
+import openai
+
+dotenv.load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def arg_parser():

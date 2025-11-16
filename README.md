@@ -52,6 +52,17 @@ Or run it directly with Python:
 python tasks/hello_world.py --model openai/gpt-4o
 ```
 
+To run a task on a partial dataset, use the `--limit` flag:
+
+```bash
+inspect eval tasks/math.py --model openai/gpt-4o --limit 10
+```
+or to run on a specific range of examples:
+
+```bash
+inspect eval ./tasks/math.py --limit 100-200 -T shuffle=false --model openai/gpt-4o
+```
+
 ## Development
 
 ### Linting and Formatting

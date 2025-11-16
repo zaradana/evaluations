@@ -10,6 +10,7 @@ dependencies = [
     "python-dotenv",
     "pre-commit",
     "ruff",
+    "datasets>=4.4.1",
 ]
 
 [build-system]

@@ -1,17 +1,9 @@
-import os
-
-import dotenv
-import openai
 from inspect_ai import Task, task
 from inspect_ai.dataset import Sample
 from inspect_ai.scorer import exact
 from inspect_ai.solver import generate
 
 from utils.arg_parser import arg_parser
-
-dotenv.load_dotenv()
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 @task
