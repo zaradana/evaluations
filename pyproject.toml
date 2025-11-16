@@ -1,0 +1,15 @@
+[project]
+name = "inspect"
+version = "0.1.0"
+description = "Inspect AI evaluation tasks"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "inspect-ai",
+    "openai",
+    "python-dotenv",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
