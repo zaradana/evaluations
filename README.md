@@ -22,7 +22,7 @@ This will:
 - Install all dependencies from `pyproject.toml`
 - Create/update `uv.lock` for reproducible builds
 
-The virtual environment will be automatically activated in your shell. If you need to activate it manually:
+Activate the virtual environment manually:
 
 ```bash
 source .venv/bin/activate
@@ -43,13 +43,13 @@ OPENAI_API_KEY=your_openai_api_key_here
 Run the theory of mind evaluation task:
 
 ```bash
-inspect eval tasks/theory_of_mind.py --model openai/gpt-4o
+inspect eval tasks/hello_world.py --model openai/gpt-4o
 ```
 
 Or run it directly with Python:
 
 ```bash
-python tasks/theory_of_mind.py --model openai/gpt-4o
+python tasks/hello_world.py --model openai/gpt-4o
 ```
 
 ## Project Structure

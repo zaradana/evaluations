@@ -34,7 +34,6 @@ def theory_of_mind():
 if __name__ == "__main__":
     args = arg_parser()
     model = args.model
-    print(f"Model: {model}")
     result = eval(theory_of_mind(), model=model)
     print(result)
     
